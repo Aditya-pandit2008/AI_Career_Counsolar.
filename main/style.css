@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  min-height: 100vh;
+  color: #0f172a;
+  padding-bottom: 120px;
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.container0 {
+  max-width: 1100px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container0 .title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+/* Chat Container */
+#ai-chat-container {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Input Bar */
+.main-search-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 10px 20px;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0), #f8fafc 40%);
+  backdrop-filter: blur(6px);
+}
+
+.search-wrapper {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#replyMode {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  background: white;
+}
+
+.main-search-input {
+  flex: 1;
+  padding: 18px 110px 18px 22px;
+  border-radius: 999px;
+  border: 1.5px solid #e5e7eb;
+  outline: none;
+  font-size: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+#micBtn {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: white;
+  border-radius: 999px;
+  padding: 8px 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  font-size: 16px;
+}
+
+#micBtn.listening {
+  background: #fee2e2;
+}
+
+.main-search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  background: linear-gradient(135deg, #6366F1, #22C55E);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

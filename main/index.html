@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PathMentor – Your AI Career Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <nav class="container0">
+      <div class="nav-left">
+        <span class="title">PathMentor</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Main Chat Area ===== -->
+  <main>
+    <div id="ai-chat-container"></div>
+
+    <!-- ===== Fixed Bottom Input Bar ===== -->
+    <div class="main-search-bar">
+      <div class="search-wrapper">
+        
+        <select id="replyMode">
+          <option value="en">English</option>
+          <option value="hinglish">Hinglish</option>
+          <option value="hi">Hindi</option>
+        </select>
+
+        <form id="career-form">
+          <input 
+            type="text" 
+            name="query"
+            class="main-search-input" 
+            placeholder="Ask PathMentor anything..." 
+            required
+          />
+          <button type="button" id="micBtn" title="Speak">🎤</button>
+          <button type="submit" class="main-search-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>
