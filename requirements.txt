@@ -1,5 +1,6 @@
 Flask>=3.0,<4.0
 flask-cors
 gunicorn
+requests
 python-dotenv
 groq
